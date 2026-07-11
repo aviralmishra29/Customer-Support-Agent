@@ -1,0 +1,17 @@
+[
+  {
+    "email": "demo@boat-demo.com",
+    "phone": "9876543210",
+    "password": "demo1234"
+  },
+  {
+    "email": "priya@example.com",
+    "phone": "9876543211",
+    "password": "demo1234"
+  },
+  {
+    "email": "amit@example.com",
+    "phone": "9876543212",
+    "password": "demo1234"
+  }
+]

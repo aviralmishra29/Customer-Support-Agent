@@ -1,0 +1,129 @@
+[
+  {
+    "order_number": "BOAT-2026-001001",
+    "user_email": "demo@boat-demo.com",
+    "status": "delivered",
+    "total_amount": 1299,
+    "shipping_address": {"city": "Mumbai", "pincode": "400001", "line1": "Flat 12, Marine Drive"},
+    "items": [{"sku": "AIRDOSES-141", "quantity": 1, "unit_price": 1299}],
+    "shipment": {
+      "tracking_number": "DLV100001001",
+      "carrier": "Delhivery",
+      "status": "delivered",
+      "timeline": [
+        {"status": "label_created", "location": "Mumbai Warehouse", "timestamp": "2026-06-10T10:00:00Z"},
+        {"status": "picked_up", "location": "Mumbai Hub", "timestamp": "2026-06-11T08:00:00Z"},
+        {"status": "in_transit", "location": "Mumbai", "timestamp": "2026-06-12T14:00:00Z"},
+        {"status": "delivered", "location": "Mumbai", "timestamp": "2026-06-24T16:30:00Z"}
+      ]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-001002",
+    "user_email": "demo@boat-demo.com",
+    "status": "shipped",
+    "total_amount": 2499,
+    "shipping_address": {"city": "Mumbai", "pincode": "400001", "line1": "Flat 12, Marine Drive"},
+    "items": [{"sku": "ROCKERZ-550", "quantity": 1, "unit_price": 2499}],
+    "shipment": {
+      "tracking_number": "DLV100001002",
+      "carrier": "Delhivery",
+      "status": "in_transit",
+      "timeline": [
+        {"status": "label_created", "location": "Gurgaon Warehouse", "timestamp": "2026-06-20T09:00:00Z"},
+        {"status": "picked_up", "location": "Gurgaon Hub", "timestamp": "2026-06-21T07:00:00Z"},
+        {"status": "in_transit", "location": "Jaipur Hub", "timestamp": "2026-06-23T11:00:00Z"}
+      ]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-001003",
+    "user_email": "demo@boat-demo.com",
+    "status": "return_initiated",
+    "total_amount": 1999,
+    "shipping_address": {"city": "Mumbai", "pincode": "400001", "line1": "Flat 12, Marine Drive"},
+    "items": [{"sku": "WAVE-CONNECT", "quantity": 1, "unit_price": 1999}],
+    "shipment": {
+      "tracking_number": "DLV100001003",
+      "carrier": "Delhivery",
+      "status": "delivered",
+      "timeline": [
+        {"status": "delivered", "location": "Mumbai", "timestamp": "2026-06-05T12:00:00Z"}
+      ]
+    },
+    "return_request": {
+      "reason": "defective",
+      "description": "Display not turning on after one day of use",
+      "status": "requested",
+      "items": [{"sku": "WAVE-CONNECT", "quantity": 1}]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-002001",
+    "user_email": "priya@example.com",
+    "status": "shipped",
+    "total_amount": 1799,
+    "shipping_address": {"city": "Bangalore", "pincode": "560001", "line1": "42 Koramangala"},
+    "items": [{"sku": "AIRDOSES-161", "quantity": 1, "unit_price": 1799}],
+    "shipment": {
+      "tracking_number": "DLV200002001",
+      "carrier": "Delhivery",
+      "status": "in_transit",
+      "timeline": [
+        {"status": "label_created", "location": "Bangalore Warehouse", "timestamp": "2026-06-22T10:00:00Z"},
+        {"status": "picked_up", "location": "Bangalore Hub", "timestamp": "2026-06-22T18:00:00Z"},
+        {"status": "in_transit", "location": "Bangalore", "timestamp": "2026-06-23T09:00:00Z"}
+      ]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-003001",
+    "user_email": "amit@example.com",
+    "status": "shipped",
+    "total_amount": 1299,
+    "shipping_address": {"city": "Delhi", "pincode": "110001", "line1": "15 Connaught Place"},
+    "items": [{"sku": "AIRDOSES-141", "quantity": 1, "unit_price": 1299}],
+    "shipment": {
+      "tracking_number": "DLV300003001",
+      "carrier": "Delhivery",
+      "status": "in_transit",
+      "timeline": [
+        {"status": "picked_up", "location": "Delhi Hub", "timestamp": "2026-06-21T08:00:00Z"},
+        {"status": "in_transit", "location": "Delhi", "timestamp": "2026-06-22T10:00:00Z"}
+      ]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-003002",
+    "user_email": "amit@example.com",
+    "status": "shipped",
+    "total_amount": 2499,
+    "shipping_address": {"city": "Delhi", "pincode": "110001", "line1": "15 Connaught Place"},
+    "items": [{"sku": "STONE-650", "quantity": 1, "unit_price": 2499}],
+    "shipment": {
+      "tracking_number": "DLV300003002",
+      "carrier": "Delhivery",
+      "status": "in_transit",
+      "timeline": [
+        {"status": "picked_up", "location": "Gurgaon Hub", "timestamp": "2026-06-20T12:00:00Z"},
+        {"status": "in_transit", "location": "Delhi NCR", "timestamp": "2026-06-21T15:00:00Z"}
+      ]
+    }
+  },
+  {
+    "order_number": "BOAT-2026-001004",
+    "user_email": "demo@boat-demo.com",
+    "status": "delivered",
+    "total_amount": 1499,
+    "shipping_address": {"city": "Mumbai", "pincode": "400001", "line1": "Flat 12, Marine Drive"},
+    "items": [{"sku": "STONE-350", "quantity": 1, "unit_price": 1499}],
+    "shipment": {
+      "tracking_number": "DLV100001004",
+      "carrier": "Delhivery",
+      "status": "delivered",
+      "timeline": [
+        {"status": "delivered", "location": "Mumbai", "timestamp": "2026-06-25T14:00:00Z"}
+      ]
+    }
+  }
+]

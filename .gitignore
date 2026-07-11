@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+logs/
+images/
+.claude/settings.local.json
+
+# generated data artifacts (regeneratable from data/seed + ingestion scripts)
+data/processed/
+data/chroma/
+data/embedding_cache/

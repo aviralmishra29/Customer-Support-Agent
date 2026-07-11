@@ -1,0 +1,1998 @@
+[
+  {
+    "sku": "AIRDOSES-121v2",
+    "name": "boAt Airdopes 121v2",
+    "category": "tws",
+    "price": 999,
+    "description": "Compact TWS with 40h playback and ENx calls.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-121v2.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-131",
+    "name": "boAt Airdopes 131",
+    "category": "tws",
+    "price": 799,
+    "description": "Lightweight earbuds with ASAP charge and 60h case battery.",
+    "specs": {
+      "battery_hours": 60,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-131.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-141",
+    "name": "boAt Airdopes 141",
+    "category": "tws",
+    "price": 1299,
+    "description": "Popular TWS with 42h playback, low latency mode.",
+    "specs": {
+      "battery_hours": 42,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-141.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-161",
+    "name": "boAt Airdopes 161",
+    "category": "tws",
+    "price": 1799,
+    "description": "Quad mic ENx, 40h battery, IPX5 for workouts.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "calls"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-161.jpg",
+    "stock": 100,
+    "is_active": false
+  },
+  {
+    "sku": "AIRDOSES-181",
+    "name": "boAt Airdopes 181",
+    "category": "tws",
+    "price": 1999,
+    "description": "13mm drivers, Beast mode for gaming.",
+    "specs": {
+      "battery_hours": 20,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.3",
+      "latency_ms": 65
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming",
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "gaming": true
+    },
+    "image_url": "/assets/products/airdoses-181.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-141ANC",
+    "name": "boAt Airdopes 141 ANC",
+    "category": "tws",
+    "price": 2499,
+    "description": "Active noise cancellation up to 32dB.",
+    "specs": {
+      "battery_hours": 36,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-141anc.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-511ANC",
+    "name": "boAt Airdopes 511 ANC",
+    "category": "tws",
+    "price": 2999,
+    "description": "Hybrid ANC, 68h total playback.",
+    "specs": {
+      "battery_hours": 68,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-511anc.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-711ANC",
+    "name": "boAt Airdopes 711 ANC",
+    "category": "tws",
+    "price": 3499,
+    "description": "Premium ANC with LDAC support.",
+    "specs": {
+      "battery_hours": 50,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-711anc.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-313U",
+    "name": "boAt Airdopes 313U",
+    "category": "tws",
+    "price": 1499,
+    "description": "UPI in case, 50h playback.",
+    "specs": {
+      "battery_hours": 50,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-313u.jpg",
+    "stock": 100,
+    "is_active": false
+  },
+  {
+    "sku": "AIRDOSES-402ANC",
+    "name": "boAt Airdopes 402 ANC",
+    "category": "tws",
+    "price": 2799,
+    "description": "Adaptive ANC, multipoint connectivity.",
+    "specs": {
+      "battery_hours": 48,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-402anc.jpg",
+    "stock": 100,
+    "is_active": false
+  },
+  {
+    "sku": "AIRDOSES-800",
+    "name": "boAt Airdopes 800",
+    "category": "tws",
+    "price": 4499,
+    "description": "Flagship TWS with head tracking spatial audio.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.4"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "gaming"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-800.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-121PRO",
+    "name": "boAt Airdopes 121 Pro",
+    "category": "tws",
+    "price": 1199,
+    "description": "Dual pairing, 40h playback.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-121pro.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-200",
+    "name": "boAt Airdopes 200",
+    "category": "tws",
+    "price": 1699,
+    "description": "Sleek stem design, 30h playback.",
+    "specs": {
+      "battery_hours": 30,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-200.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-450",
+    "name": "boAt Airdopes 450",
+    "category": "tws",
+    "price": 2199,
+    "description": "Beast mode 60ms latency for mobile gaming.",
+    "specs": {
+      "battery_hours": 35,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3",
+      "latency_ms": 60
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming"
+      ],
+      "price_tier": "mid",
+      "gaming": true
+    },
+    "image_url": "/assets/products/airdoses-450.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-900PRO",
+    "name": "boAt Airdopes 900 Pro",
+    "category": "tws",
+    "price": 4999,
+    "description": "Premium drivers, adaptive EQ, ANC Pro.",
+    "specs": {
+      "battery_hours": 45,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.4"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-900pro.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-255",
+    "name": "boAt Rockerz 255",
+    "category": "neckband",
+    "price": 999,
+    "description": "Flexible neckband, 10mm drivers, 6h playback.",
+    "specs": {
+      "battery_hours": 6,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "daily_commute"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-255.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-255PRO",
+    "name": "boAt Rockerz 255 Pro",
+    "category": "neckband",
+    "price": 1299,
+    "description": "ASAP charge, 10h playback, ENx tech.",
+    "specs": {
+      "battery_hours": 10,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "calls"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-255pro.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-330",
+    "name": "boAt Rockerz 330",
+    "category": "neckband",
+    "price": 1499,
+    "description": "Type-C charging, 30h playback.",
+    "specs": {
+      "battery_hours": 30,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-330.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-335",
+    "name": "boAt Rockerz 335",
+    "category": "neckband",
+    "price": 1799,
+    "description": "Dual pairing, 30h battery.",
+    "specs": {
+      "battery_hours": 30,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-335.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-450",
+    "name": "boAt Rockerz 450",
+    "category": "neckband",
+    "price": 1999,
+    "description": "Beast mode, 40h playback.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming",
+        "gym"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-450.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-550",
+    "name": "boAt Rockerz 550",
+    "category": "neckband",
+    "price": 2499,
+    "description": "Over-ear neckband hybrid with ANC.",
+    "specs": {
+      "battery_hours": 20,
+      "anc": true,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "travel"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-550.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-650PRO",
+    "name": "boAt Rockerz 650 Pro",
+    "category": "neckband",
+    "price": 2999,
+    "description": "Dual drivers, 80h playback.",
+    "specs": {
+      "battery_hours": 80,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "premium",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-650pro.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-245V2",
+    "name": "boAt Rockerz 245 V2",
+    "category": "neckband",
+    "price": 1199,
+    "description": "Magnetic earbuds, 15h playback.",
+    "specs": {
+      "battery_hours": 15,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-245v2.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-NEO",
+    "name": "boAt Wave Neo",
+    "category": "watch",
+    "price": 1499,
+    "description": "1.69 inch display, heart rate, SpO2.",
+    "specs": {
+      "display_inch": 1.69,
+      "battery_days": 7,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/wave-neo.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-CONNECT",
+    "name": "boAt Wave Connect",
+    "category": "watch",
+    "price": 1999,
+    "description": "Bluetooth calling, 1.69 inch HD display.",
+    "specs": {
+      "display_inch": 1.69,
+      "battery_days": 7,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/wave-connect.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-ULTIMA",
+    "name": "boAt Wave Ultima",
+    "category": "watch",
+    "price": 2499,
+    "description": "1.96 inch AMOLED, 100+ sports modes.",
+    "specs": {
+      "display_inch": 1.96,
+      "battery_days": 5,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/wave-ultima.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "LUNAR-PRO",
+    "name": "boAt Lunar Pro",
+    "category": "watch",
+    "price": 2999,
+    "description": "Premium metal body, AMOLED, BT calling.",
+    "specs": {
+      "display_inch": 1.43,
+      "battery_days": 7,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/lunar-pro.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "LUNAR-CONNECT",
+    "name": "boAt Lunar Connect",
+    "category": "watch",
+    "price": 3499,
+    "description": "1.39 inch round AMOLED, advanced health.",
+    "specs": {
+      "display_inch": 1.39,
+      "battery_days": 7,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/lunar-connect.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-ARMOUR",
+    "name": "boAt Wave Armour",
+    "category": "watch",
+    "price": 1799,
+    "description": "Rugged design, IP68 water resistance.",
+    "specs": {
+      "display_inch": 1.69,
+      "battery_days": 10,
+      "bluetooth": "5.0",
+      "ip_rating": "IP68"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/wave-armour.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "XTEND-PLUS",
+    "name": "boAt Xtend Plus",
+    "category": "watch",
+    "price": 2199,
+    "description": "Alexa built-in, 1.69 inch display.",
+    "specs": {
+      "display_inch": 1.69,
+      "battery_days": 7,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/xtend-plus.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-ASTRA",
+    "name": "boAt Wave Astra",
+    "category": "watch",
+    "price": 2799,
+    "description": "1.69 inch always-on display, premium build.",
+    "specs": {
+      "display_inch": 1.69,
+      "battery_days": 6,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/wave-astra.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-350",
+    "name": "boAt Stone 350",
+    "category": "speaker",
+    "price": 1499,
+    "description": "Portable 10W speaker, IPX7 waterproof.",
+    "specs": {
+      "power_w": 10,
+      "battery_hours": 12,
+      "ip_rating": "IPX7",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/stone-350.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-650",
+    "name": "boAt Stone 650",
+    "category": "speaker",
+    "price": 2499,
+    "description": "15W RMS, dual drivers, party mode.",
+    "specs": {
+      "power_w": 15,
+      "battery_hours": 12,
+      "ip_rating": "IPX6",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/stone-650.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-1200",
+    "name": "boAt Stone 1200",
+    "category": "speaker",
+    "price": 3999,
+    "description": "14W thumping bass, RGB LEDs.",
+    "specs": {
+      "power_w": 14,
+      "battery_hours": 9,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/stone-1200.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AAVANTE-BAR-1100",
+    "name": "boAt Aavante Bar 1100",
+    "category": "speaker",
+    "price": 6999,
+    "description": "2.0 channel soundbar for TV.",
+    "specs": {
+      "power_w": 60,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/aavante-bar-1100.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "PARTY-LOUNGE",
+    "name": "boAt Party Lounge",
+    "category": "speaker",
+    "price": 4999,
+    "description": "50W party speaker with mic.",
+    "specs": {
+      "power_w": 50,
+      "battery_hours": 6,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/party-lounge.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-180",
+    "name": "boAt Stone 180",
+    "category": "speaker",
+    "price": 999,
+    "description": "Compact 5W speaker for travel.",
+    "specs": {
+      "power_w": 5,
+      "battery_hours": 8,
+      "ip_rating": "IPX6",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/stone-180.jpg",
+    "stock": 100,
+    "is_active": false
+  },
+  {
+    "sku": "ROCKERZ-450H",
+    "name": "boAt Rockerz 450",
+    "category": "headphone",
+    "price": 1799,
+    "description": "On-ear wireless headphones, 15h playback.",
+    "specs": {
+      "battery_hours": 15,
+      "anc": false,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "fit": "on_ear"
+    },
+    "image_url": "/assets/products/rockerz-450h.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-550H",
+    "name": "boAt Rockerz 550",
+    "category": "headphone",
+    "price": 2499,
+    "description": "Over-ear with padded cushions, 20h battery.",
+    "specs": {
+      "battery_hours": 20,
+      "anc": false,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh"
+      ],
+      "price_tier": "mid",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/rockerz-550h.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "NIRVANA-751ANC",
+    "name": "boAt Nirvana 751 ANC",
+    "category": "headphone",
+    "price": 3999,
+    "description": "Hybrid ANC over-ear, 65h playback.",
+    "specs": {
+      "battery_hours": 65,
+      "anc": true,
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/nirvana-751anc.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-480",
+    "name": "boAt Rockerz 480",
+    "category": "headphone",
+    "price": 1999,
+    "description": "Foldable design, 15h playback.",
+    "specs": {
+      "battery_hours": 15,
+      "anc": false,
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "fit": "on_ear"
+    },
+    "image_url": "/assets/products/rockerz-480.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "NIRVANA-X",
+    "name": "boAt Nirvana X",
+    "category": "headphone",
+    "price": 4999,
+    "description": "Flagship ANC headphones with spatial audio.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": true,
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/nirvana-x.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "CABLE-TYPEC-100",
+    "name": "boAt Type-C A400",
+    "category": "cable",
+    "price": 299,
+    "description": "1m durable Type-C cable, 3A charging.",
+    "specs": {
+      "length_m": 1,
+      "connector": "type_c"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/cable-typec-100.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "CABLE-LIGHTNING-100",
+    "name": "boAt Lightning A400",
+    "category": "cable",
+    "price": 499,
+    "description": "MFi certified lightning cable.",
+    "specs": {
+      "length_m": 1,
+      "connector": "lightning"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/cable-lightning-100.jpg",
+    "stock": 100,
+    "is_active": false
+  },
+  {
+    "sku": "CABLE-TYPEC-200",
+    "name": "boAt Type-C A500",
+    "category": "cable",
+    "price": 449,
+    "description": "2m braided Type-C fast charging cable.",
+    "specs": {
+      "length_m": 2,
+      "connector": "type_c"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/cable-typec-200.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "CHARGER-18W",
+    "name": "boAt 18W Type-C Charger",
+    "category": "cable",
+    "price": 699,
+    "description": "18W fast charger with Type-C port.",
+    "specs": {
+      "watt": 18,
+      "connector": "type_c"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/charger-18w.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-10000",
+    "name": "boAt EnergyShroom 10000",
+    "category": "powerbank",
+    "price": 999,
+    "description": "10000mAh power bank, 22.5W fast charge.",
+    "specs": {
+      "capacity_mah": 10000,
+      "watt": 22.5
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/energyshroom-10000.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-20000",
+    "name": "boAt EnergyShroom 20000",
+    "category": "powerbank",
+    "price": 1499,
+    "description": "20000mAh with dual output.",
+    "specs": {
+      "capacity_mah": 20000,
+      "watt": 18
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/energyshroom-20000.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-5000",
+    "name": "boAt EnergyShroom 5000",
+    "category": "powerbank",
+    "price": 699,
+    "description": "Compact 5000mAh pocket power bank.",
+    "specs": {
+      "capacity_mah": 5000,
+      "watt": 15
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/energyshroom-5000.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-30000",
+    "name": "boAt EnergyShroom 30000",
+    "category": "powerbank",
+    "price": 2499,
+    "description": "30000mAh for extended travel.",
+    "specs": {
+      "capacity_mah": 30000,
+      "watt": 22.5
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/energyshroom-30000.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-201",
+    "name": "boAt Airdopes 201",
+    "category": "tws",
+    "price": 1499,
+    "description": "Quad mic ENx, 40h total playback.",
+    "specs": {
+      "battery_hours": 40,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-201.jpg",
+    "stock": 120,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-211",
+    "name": "boAt Airdopes 211",
+    "category": "tws",
+    "price": 1699,
+    "description": "Low latency gaming mode, 50h case battery.",
+    "specs": {
+      "battery_hours": 50,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming",
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-211.jpg",
+    "stock": 90,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-221",
+    "name": "boAt Airdopes 221",
+    "category": "tws",
+    "price": 1899,
+    "description": "Hybrid ANC TWS with 35h playback.",
+    "specs": {
+      "battery_hours": 35,
+      "anc": true,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-221.jpg",
+    "stock": 80,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-241",
+    "name": "boAt Airdopes 241",
+    "category": "tws",
+    "price": 2199,
+    "description": "Premium drivers with spatial audio support.",
+    "specs": {
+      "battery_hours": 45,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "calls"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-241.jpg",
+    "stock": 70,
+    "is_active": false
+  },
+  {
+    "sku": "AIRDOSES-251",
+    "name": "boAt Airdopes 251",
+    "category": "tws",
+    "price": 999,
+    "description": "Budget TWS with 35h playback and ASAP charge.",
+    "specs": {
+      "battery_hours": 35,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-251.jpg",
+    "stock": 150,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-271",
+    "name": "boAt Airdopes 271",
+    "category": "tws",
+    "price": 1299,
+    "description": "Sweat-proof design for workouts, IPX5 rated.",
+    "specs": {
+      "battery_hours": 38,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-271.jpg",
+    "stock": 110,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-291",
+    "name": "boAt Airdopes 291",
+    "category": "tws",
+    "price": 2499,
+    "description": "Flagship TWS with adaptive ANC and LDAC.",
+    "specs": {
+      "battery_hours": 42,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh",
+        "calls"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/airdoses-291.jpg",
+    "stock": 60,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-301",
+    "name": "boAt Airdopes 301",
+    "category": "tws",
+    "price": 1599,
+    "description": "Open-ear comfort fit with 30h battery.",
+    "specs": {
+      "battery_hours": 30,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute",
+        "calls"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-301.jpg",
+    "stock": 95,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-311",
+    "name": "boAt Airdopes 311",
+    "category": "tws",
+    "price": 899,
+    "description": "Ultra-light TWS for all-day wear.",
+    "specs": {
+      "battery_hours": 32,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/airdoses-311.jpg",
+    "stock": 140,
+    "is_active": true
+  },
+  {
+    "sku": "AIRDOSES-331",
+    "name": "boAt Airdopes 331",
+    "category": "tws",
+    "price": 1999,
+    "description": "Dual device pairing with 48h playback.",
+    "specs": {
+      "battery_hours": 48,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "wfh"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/airdoses-331.jpg",
+    "stock": 85,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-265",
+    "name": "boAt Rockerz 265",
+    "category": "neckband",
+    "price": 999,
+    "description": "Flexible neckband with 12h playback.",
+    "specs": {
+      "battery_hours": 12,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "calls"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-265.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-275",
+    "name": "boAt Rockerz 275",
+    "category": "neckband",
+    "price": 1099,
+    "description": "Magnetic buds with ASAP charge.",
+    "specs": {
+      "battery_hours": 14,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "daily_commute"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-275.jpg",
+    "stock": 95,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-285",
+    "name": "boAt Rockerz 285",
+    "category": "neckband",
+    "price": 1399,
+    "description": "ENx quad mic for clear calls on the go.",
+    "specs": {
+      "battery_hours": 16,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "wfh"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-285.jpg",
+    "stock": 80,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-295",
+    "name": "boAt Rockerz 295",
+    "category": "neckband",
+    "price": 1599,
+    "description": "Active noise cancellation neckband.",
+    "specs": {
+      "battery_hours": 18,
+      "anc": true,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-295.jpg",
+    "stock": 75,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-305",
+    "name": "boAt Rockerz 305",
+    "category": "neckband",
+    "price": 1799,
+    "description": "Premium neckband with 20h battery.",
+    "specs": {
+      "battery_hours": 20,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "travel"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-305.jpg",
+    "stock": 70,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-315",
+    "name": "boAt Rockerz 315",
+    "category": "neckband",
+    "price": 899,
+    "description": "Entry neckband for daily commute.",
+    "specs": {
+      "battery_hours": 10,
+      "anc": false,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-315.jpg",
+    "stock": 120,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-325",
+    "name": "boAt Rockerz 325",
+    "category": "neckband",
+    "price": 1999,
+    "description": "Dual pairing neckband with 22h playback.",
+    "specs": {
+      "battery_hours": 22,
+      "anc": false,
+      "ip_rating": "IPX5",
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "gym"
+      ],
+      "price_tier": "mid",
+      "fit": "neckband"
+    },
+    "image_url": "/assets/products/rockerz-325.jpg",
+    "stock": 65,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-ELITE",
+    "name": "boAt Wave Elite",
+    "category": "watch",
+    "price": 3999,
+    "description": "AMOLED display with always-on and SpO2.",
+    "specs": {
+      "battery_hours": 168,
+      "display": "AMOLED",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute",
+        "gym"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/wave-elite.jpg",
+    "stock": 55,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-FIT",
+    "name": "boAt Wave Fit",
+    "category": "watch",
+    "price": 1499,
+    "description": "Budget fitness tracker with heart rate monitor.",
+    "specs": {
+      "battery_hours": 120,
+      "display": "LCD",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/wave-fit.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-ULTRA",
+    "name": "boAt Wave Ultra",
+    "category": "watch",
+    "price": 3299,
+    "description": "GPS tracking and 100+ sports modes.",
+    "specs": {
+      "battery_hours": 144,
+      "display": "AMOLED",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym",
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/wave-ultra.jpg",
+    "stock": 60,
+    "is_active": true
+  },
+  {
+    "sku": "LUNAR-ORBIT",
+    "name": "boAt Lunar Orbit",
+    "category": "watch",
+    "price": 2499,
+    "description": "Round dial smartwatch with Bluetooth calling.",
+    "specs": {
+      "battery_hours": 96,
+      "display": "TFT",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/lunar-orbit.jpg",
+    "stock": 75,
+    "is_active": true
+  },
+  {
+    "sku": "LUNAR-DIAL",
+    "name": "boAt Lunar Dial",
+    "category": "watch",
+    "price": 2199,
+    "description": "Classic round design with notification mirroring.",
+    "specs": {
+      "battery_hours": 72,
+      "display": "TFT",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/lunar-dial.jpg",
+    "stock": 80,
+    "is_active": true
+  },
+  {
+    "sku": "WAVE-SPORT",
+    "name": "boAt Wave Sport",
+    "category": "watch",
+    "price": 1699,
+    "description": "Rugged sports watch with IP68 rating.",
+    "specs": {
+      "battery_hours": 108,
+      "display": "LCD",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "gym"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/wave-sport.jpg",
+    "stock": 90,
+    "is_active": true
+  },
+  {
+    "sku": "LUNAR-VOICE",
+    "name": "boAt Lunar Voice",
+    "category": "watch",
+    "price": 3799,
+    "description": "Premium calling watch with dual strap.",
+    "specs": {
+      "battery_hours": 120,
+      "display": "AMOLED",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "calls",
+        "wfh"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/lunar-voice.jpg",
+    "stock": 50,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-850",
+    "name": "boAt Stone 850",
+    "category": "speaker",
+    "price": 3499,
+    "description": "Party speaker with RGB lights and TWS pairing.",
+    "specs": {
+      "battery_hours": 24,
+      "ip_rating": "IPX7",
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming",
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/stone-850.jpg",
+    "stock": 55,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-BAR",
+    "name": "boAt Stone Bar",
+    "category": "speaker",
+    "price": 4999,
+    "description": "Soundbar-style speaker for home entertainment.",
+    "specs": {
+      "battery_hours": 20,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "gaming"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/stone-bar.jpg",
+    "stock": 40,
+    "is_active": false
+  },
+  {
+    "sku": "STONE-MINI",
+    "name": "boAt Stone Mini",
+    "category": "speaker",
+    "price": 999,
+    "description": "Pocket speaker with carabiner hook.",
+    "specs": {
+      "battery_hours": 8,
+      "ip_rating": "IPX4",
+      "bluetooth": "5.0"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/stone-mini.jpg",
+    "stock": 110,
+    "is_active": true
+  },
+  {
+    "sku": "STONE-GO",
+    "name": "boAt Stone Go",
+    "category": "speaker",
+    "price": 1299,
+    "description": "Waterproof outdoor speaker for poolside use.",
+    "specs": {
+      "battery_hours": 10,
+      "ip_rating": "IPX7",
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "gym"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/stone-go.jpg",
+    "stock": 95,
+    "is_active": false
+  },
+  {
+    "sku": "ROCKERZ-510",
+    "name": "boAt Rockerz 510",
+    "category": "headphone",
+    "price": 1499,
+    "description": "Wireless on-ear with 25h battery.",
+    "specs": {
+      "battery_hours": 25,
+      "anc": false,
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget",
+      "fit": "on_ear"
+    },
+    "image_url": "/assets/products/rockerz-510.jpg",
+    "stock": 90,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-530",
+    "name": "boAt Rockerz 530",
+    "category": "headphone",
+    "price": 2299,
+    "description": "Over-ear with padded cushions and 30h playback.",
+    "specs": {
+      "battery_hours": 30,
+      "anc": false,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "daily_commute"
+      ],
+      "price_tier": "mid",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/rockerz-530.jpg",
+    "stock": 75,
+    "is_active": true
+  },
+  {
+    "sku": "NIRVANA-525",
+    "name": "boAt Nirvana 525",
+    "category": "headphone",
+    "price": 3499,
+    "description": "Hybrid ANC over-ear with 50h battery.",
+    "specs": {
+      "battery_hours": 50,
+      "anc": true,
+      "bluetooth": "5.2"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel",
+        "wfh"
+      ],
+      "price_tier": "premium",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/nirvana-525.jpg",
+    "stock": 55,
+    "is_active": true
+  },
+  {
+    "sku": "ROCKERZ-460",
+    "name": "boAt Rockerz 460",
+    "category": "headphone",
+    "price": 1799,
+    "description": "Foldable on-ear headphones for travel.",
+    "specs": {
+      "battery_hours": 20,
+      "anc": false,
+      "bluetooth": "5.1"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "mid",
+      "fit": "on_ear"
+    },
+    "image_url": "/assets/products/rockerz-460.jpg",
+    "stock": 80,
+    "is_active": false
+  },
+  {
+    "sku": "ROCKERZ-570",
+    "name": "boAt Rockerz 570",
+    "category": "headphone",
+    "price": 2799,
+    "description": "Studio-style over-ear with low latency mode.",
+    "specs": {
+      "battery_hours": 35,
+      "anc": false,
+      "bluetooth": "5.3"
+    },
+    "attributes": {
+      "use_cases": [
+        "gaming",
+        "wfh"
+      ],
+      "price_tier": "mid",
+      "fit": "over_ear"
+    },
+    "image_url": "/assets/products/rockerz-570.jpg",
+    "stock": 65,
+    "is_active": true
+  },
+  {
+    "sku": "CABLE-TYPEC-300",
+    "name": "boAt Type-C A600",
+    "category": "cable",
+    "price": 549,
+    "description": "3m braided Type-C cable, 60W PD support.",
+    "specs": {
+      "length_m": 3,
+      "connector": "type_c",
+      "watt": 60
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/cable-typec-300.jpg",
+    "stock": 100,
+    "is_active": true
+  },
+  {
+    "sku": "CABLE-MICRO-100",
+    "name": "boAt Micro USB A300",
+    "category": "cable",
+    "price": 249,
+    "description": "1m micro USB cable for legacy devices.",
+    "specs": {
+      "length_m": 1,
+      "connector": "micro_usb"
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute"
+      ],
+      "price_tier": "budget"
+    },
+    "image_url": "/assets/products/cable-micro-100.jpg",
+    "stock": 80,
+    "is_active": true
+  },
+  {
+    "sku": "CHARGER-33W",
+    "name": "boAt 33W GaN Charger",
+    "category": "cable",
+    "price": 1299,
+    "description": "Compact GaN charger with dual Type-C ports.",
+    "specs": {
+      "watt": 33,
+      "connector": "type_c"
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/charger-33w.jpg",
+    "stock": 70,
+    "is_active": false
+  },
+  {
+    "sku": "CHARGER-65W",
+    "name": "boAt 65W GaN Charger",
+    "category": "cable",
+    "price": 1999,
+    "description": "65W GaN charger for laptops and phones.",
+    "specs": {
+      "watt": 65,
+      "connector": "type_c"
+    },
+    "attributes": {
+      "use_cases": [
+        "wfh",
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/charger-65w.jpg",
+    "stock": 50,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-15000",
+    "name": "boAt EnergyShroom 15000",
+    "category": "powerbank",
+    "price": 1299,
+    "description": "15000mAh with 18W dual output.",
+    "specs": {
+      "capacity_mah": 15000,
+      "watt": 18
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/energyshroom-15000.jpg",
+    "stock": 85,
+    "is_active": false
+  },
+  {
+    "sku": "ENERGYSHROOM-MAG",
+    "name": "boAt EnergyShroom Mag",
+    "category": "powerbank",
+    "price": 1799,
+    "description": "MagSafe-compatible 5000mAh wireless power bank.",
+    "specs": {
+      "capacity_mah": 5000,
+      "watt": 15
+    },
+    "attributes": {
+      "use_cases": [
+        "daily_commute",
+        "travel"
+      ],
+      "price_tier": "mid"
+    },
+    "image_url": "/assets/products/energyshroom-mag.jpg",
+    "stock": 60,
+    "is_active": true
+  },
+  {
+    "sku": "ENERGYSHROOM-45000",
+    "name": "boAt EnergyShroom 45000",
+    "category": "powerbank",
+    "price": 3499,
+    "description": "45000mAh powerhouse for multi-day trips.",
+    "specs": {
+      "capacity_mah": 45000,
+      "watt": 22.5
+    },
+    "attributes": {
+      "use_cases": [
+        "travel"
+      ],
+      "price_tier": "premium"
+    },
+    "image_url": "/assets/products/energyshroom-45000.jpg",
+    "stock": 35,
+    "is_active": true
+  }
+]

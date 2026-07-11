@@ -1,0 +1,198 @@
+[
+  {
+    "faq_key": "pairing-tws",
+    "topic": "troubleshooting",
+    "language": "en",
+    "question": "How do I pair my boAt Airdopes TWS earbuds?",
+    "answer": "Open the charging case lid. Enable Bluetooth on your phone. Select your Airdopes from the device list. If pairing fails, reset earbuds by holding touch controls for 10 seconds, then retry."
+  },
+  {
+    "faq_key": "pairing-neckband",
+    "topic": "troubleshooting",
+    "language": "en",
+    "question": "How to pair boAt Rockerz neckband?",
+    "answer": "Press and hold the power button until the LED flashes blue/red. Open Bluetooth settings on your phone and select the Rockerz device. Default PIN is 0000 if prompted."
+  },
+  {
+    "faq_key": "warranty-duration",
+    "topic": "warranty",
+    "language": "en",
+    "question": "What is the warranty period on boAt products?",
+    "answer": "Most boAt audio products carry a 1-year manufacturer warranty from the date of purchase. Smartwatches may have 1 year on device and 6 months on strap. Warranty covers manufacturing defects only."
+  },
+  {
+    "faq_key": "warranty-claim",
+    "topic": "warranty",
+    "language": "en",
+    "question": "How do I claim warranty?",
+    "answer": "Raise a ticket via support chat or email support@boat-demo.com with invoice, product serial number, and issue description. Our team will arrange pickup or service center referral within 3-5 business days."
+  },
+  {
+    "faq_key": "return-window",
+    "topic": "returns",
+    "language": "en",
+    "question": "What is the return window?",
+    "answer": "You can return eligible products within 7 days of delivery if unused and in original packaging with all accessories. Damaged-on-delivery cases are handled separately with photo proof."
+  },
+  {
+    "faq_key": "return-process",
+    "topic": "returns",
+    "language": "en",
+    "question": "How do I initiate a return?",
+    "answer": "Log in to your account, go to My Orders, select the order, and click Return Item. Choose reason and submit. Our courier partner will schedule a free pickup within 2-3 business days."
+  },
+  {
+    "faq_key": "cod-available",
+    "topic": "shipping",
+    "language": "en",
+    "question": "Is Cash on Delivery available?",
+    "answer": "Yes, COD is available on orders up to INR 5000 for most pincodes. A small COD handling fee may apply at checkout."
+  },
+  {
+    "faq_key": "shipping-time",
+    "topic": "shipping",
+    "language": "en",
+    "question": "How long does shipping take?",
+    "answer": "Standard delivery takes 3-7 business days depending on your pincode. Metro cities typically receive orders in 2-4 days. You will receive tracking details once the order ships."
+  },
+  {
+    "faq_key": "track-order",
+    "topic": "orders",
+    "language": "en",
+    "question": "How can I track my order?",
+    "answer": "Log in and open My Orders, or ask our support agent 'Where is my order?'. You can also use the tracking link sent via SMS/email with your order number."
+  },
+  {
+    "faq_key": "anc-explained",
+    "topic": "product",
+    "language": "en",
+    "question": "What is ANC and do I need it?",
+    "answer": "Active Noise Cancellation (ANC) uses microphones to reduce ambient noise. Recommended for travel, office work, and noisy commutes. For gym or awareness of surroundings, non-ANC or transparency mode may be better."
+  },
+  {
+    "faq_key": "ip-rating",
+    "topic": "product",
+    "language": "en",
+    "question": "What does IPX5 or IPX7 mean?",
+    "answer": "IPX5 resists water jets and sweat — suitable for gym. IPX7 can survive temporary submersion up to 1 meter for 30 minutes. Higher rating means better water resistance."
+  },
+  {
+    "faq_key": "one-earbud-not-working",
+    "topic": "troubleshooting",
+    "language": "en",
+    "question": "One earbud is not working. What should I do?",
+    "answer": "Place both earbuds in the case and charge for 30 minutes. Clean charging pins. Reset earbuds per manual. If issue persists after reset, check warranty eligibility for replacement."
+  },
+  {
+    "faq_key": "refund-timeline",
+    "topic": "returns",
+    "language": "en",
+    "question": "When will I get my refund?",
+    "answer": "Refunds are processed within 5-7 business days after the returned product passes quality check. Amount is credited to your original payment method or wallet."
+  },
+  {
+    "faq_key": "pairing-hindi",
+    "topic": "troubleshooting",
+    "language": "hi",
+    "question": "Airdopes kaise connect karein?",
+    "answer": "Case ka lid kholein, phone par Bluetooth on karein, aur Airdopes select karein. Agar pair na ho to earbuds ko 10 second touch karke reset karein aur dubara try karein."
+  },
+  {
+    "faq_key": "return-hindi",
+    "topic": "returns",
+    "language": "hi",
+    "question": "Return policy kya hai?",
+    "answer": "Delivery ke 7 din ke andar unused product original box ke saath return kar sakte hain. My Orders se return initiate karein ya support se baat karein."
+  },
+  {
+    "faq_key": "warranty-hindi",
+    "topic": "warranty",
+    "language": "hi",
+    "question": "Warranty kitni hai?",
+    "answer": "Zyada tar boAt products par 1 saal ki warranty milti hai manufacturing defect ke liye. Invoice aur serial number ready rakhein claim ke liye."
+  },
+  {
+    "faq_key": "cod-hindi",
+    "topic": "shipping",
+    "language": "hi",
+    "question": "COD available hai kya?",
+    "answer": "Haan, INR 5000 tak ke orders par zyada tar pincode par COD available hai."
+  },
+  {
+    "faq_key": "battery-drain",
+    "topic": "troubleshooting",
+    "language": "en",
+    "question": "My earbuds battery drains quickly. What can I do?",
+    "answer": "Disable ANC when not needed, lower volume, turn off dual pairing, and ensure firmware is updated via boAt app. If battery degraded within warranty, raise a warranty claim."
+  },
+  {
+    "faq_key": "smartwatch-pairing",
+    "topic": "troubleshooting",
+    "language": "en",
+    "question": "How to pair boAt smartwatch?",
+    "answer": "Download the boAt Crest app, enable Bluetooth, tap Add Device in the app, and follow on-screen instructions. Keep watch charged above 20% during pairing."
+  },
+  {
+    "faq_key": "damaged-delivery",
+    "topic": "returns",
+    "language": "en",
+    "question": "Product arrived damaged. What should I do?",
+    "answer": "Do not use a damaged electronic product if you see exposed wires or battery damage. Contact support within 48 hours with photos. We will arrange replacement or refund after verification."
+  },
+  {
+    "faq_key": "shipping-hinglish",
+    "topic": "shipping",
+    "language": "hinglish",
+    "question": "Shipping kitne din mein aata hai?",
+    "answer": "Usually 3-7 business days lagte hain delivery mein. Metro cities mein 2-4 din. Order ship hone par tracking SMS/email par milega."
+  },
+  {
+    "faq_key": "order-track-hinglish",
+    "topic": "orders",
+    "language": "hinglish",
+    "question": "Mera order kaise track karun?",
+    "answer": "Login karke My Orders kholo ya chat mein poocho 'Mera order kahan hai?'. SMS/email wala tracking link bhi use kar sakte ho."
+  },
+  {
+    "faq_key": "refund-hinglish",
+    "topic": "returns",
+    "language": "hinglish",
+    "question": "Refund kab milega?",
+    "answer": "Return QC pass hone ke 5-7 business days mein refund process hota hai. Original payment method ya wallet mein credit hoga."
+  },
+  {
+    "faq_key": "warranty-hinglish",
+    "topic": "warranty",
+    "language": "hinglish",
+    "question": "Warranty claim kaise karein?",
+    "answer": "Invoice aur serial number ke saath support chat ya email par ticket raise karo. Team 3-5 din mein pickup ya service center ka option degi."
+  },
+  {
+    "faq_key": "anc-hinglish",
+    "topic": "product",
+    "language": "hinglish",
+    "question": "ANC earbuds chahiye travel ke liye",
+    "answer": "ANC ambient noise kam karta hai — flights aur office ke liye accha hai. Gym ya road use ke liye transparency mode ya non-ANC bhi consider karo."
+  },
+  {
+    "faq_key": "battery-hinglish",
+    "topic": "troubleshooting",
+    "language": "hinglish",
+    "question": "Battery jaldi khatam ho rahi hai kya karun?",
+    "answer": "ANC band karo jab zarurat na ho, volume kam rakho, dual pairing off karo. Warranty ke andar ho to claim raise kar sakte ho."
+  },
+  {
+    "faq_key": "order-place-hindi",
+    "topic": "orders",
+    "language": "hi",
+    "question": "ऑर्डर कैसे करें?",
+    "answer": "वेबसाइट पर प्रोडक्ट चुनें, कार्ट में जोड़ें, पता और भुगतान विवरण भरें। पुष्टि के बाद ईमेल पर ऑर्डर विवरण मिलेगा।"
+  },
+  {
+    "faq_key": "invoice-hindi",
+    "topic": "orders",
+    "language": "hi",
+    "question": "इनवॉइस कैसे डाउनलोड करें?",
+    "answer": "लॉग इन करके मेरे ऑर्डर में जाएं और ऑर्डर के बगल में इनवॉइस डाउनलोड पर क्लिक करें। ईमेल में भी PDF भेजा जाता है।"
+  }
+]

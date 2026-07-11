@@ -1,0 +1,23 @@
+# Retrieval quality: classification and reranking
+
+## The problem, found empirically
+Query: "which earbuds have good battery life." Top-3 by pure vector similarity: two FAQ *complaints* about battery draining, then the actual good-battery product third. Embeddings measure **topical closeness**, not sentiment/polarity/intent — "battery drains quickly" and "good battery life" are both heavily about "earbuds + battery," so they land close in vector space even though one's a complaint and the other wants a recommendation. This is a general, well-documented weakness of dense embeddings across the industry, not specific to `nomic-embed-text` — bigger/better embedding models reduce it somewhat but don't eliminate it structurally.
+
+## Is switching distance metric (L2 → cosine) the fix?
+No — and this is provable without even testing it: since our vectors are already unit-normalized, L2 and cosine give identical rankings (see notes 02). The problem isn't which formula measures the gap between two points — it's that the *embedding model itself* placed those two points close together regardless of which formula you use to measure "close."
+
+## Two complementary real fixes (how companies actually solve this)
+**1. Intent classification / routing (before retrieval).** Classify the query into a category (product/policy/faq/unsure) — a coarse *label*, not a rewrite of the query text — then use that label to filter retrieval (e.g. Chroma `where={"type": "product"}`), excluding wrong-type chunks before similarity search even runs. Different from **query rewriting**, which actually changes the query text sent to the embedder — classification and rewriting are separate techniques, often combined but not the same thing.
+
+**2. Retrieve-then-rerank (after retrieval).** Cast a wide net first (e.g. top-10, optimizing for *recall* — is the right answer even in the candidate pool?), then use a more precise/expensive step to pick the best subset from that pool (optimizing for *precision*). Send all candidates in **one** prompt for the LLM to rank against each other, rather than N separate per-candidate calls — cheaper, and lets the model compare candidates directly instead of scoring each in isolation.
+
+Neither is a substitute for the other — they operate at different altitudes. Routing decides *where to even look* (which corpus/filter); reranking refines *which of what came back* is best. Intent-based filtering is closer to unavoidable in any multi-capability agent (we already need a router for RAG vs. order vs. auth vs. escalation); reranking is an added refinement once retrieval volume/stakes justify the cost. For our battery example, type-filtering alone already fixed the cross-type contamination (FAQ vs. product); reranking is what's needed for fine-grained ordering *within* the correctly-filtered set.
+
+## think:false vs think:true — empirically, not assumed
+- **Classification** worked fine with `think:false` once the prompt included actual category *descriptions*, not just bare category names — a bare-names prompt misclassified an easy case ("which earbuds have good battery life" → "unsure"). Stress-tested 5/5 correct after adding descriptions.
+- **Reranking with `think:false`** completely missed the actual best answer (68h battery) when 10 candidates had close/tied numeric values (three-way tie at 50h, near-duplicates elsewhere) — picked a tied-*worst* option into the top-3 instead. Fast mode does shallow pattern-matching, not careful multi-item numeric comparison.
+- **Switching reranking to `think:true`** fixed the major miss — its chain-of-thought explicitly listed every candidate's battery number and sorted them, correctly surfacing the 68h product as #1. Still not perfect on fine ties (once picked a 48h option over a 3-way tie at 50h, visibly second-guessing itself in its own reasoning trace) — better, not flawless.
+- Real cost: stacking classify (~2-4s) + rerank (~20-25s, `think:true`) + generate (~20-25s, `think:true`) pushes toward 45-60s per query on CPU-only hardware. Accepted as a deliberate tradeoff for correctness on this project, per [[project_boat_support_agent]]'s "measure it, document it, don't chase speed" stance — not yet instrumented with precise timing (no timestamps in the script yet; Ollama's own `total_duration` field per response would give exact numbers later).
+
+## Groundedness in generation
+Final generation prompt explicitly instructs: answer *only* from the given context, and admit if the context doesn't fully answer rather than guessing. Verified the model followed this — cited exact battery numbers from context (68h, 60h) and explicitly noted a third option was lower, without inventing anything not present in the retrieved chunks.
