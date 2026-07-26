@@ -30,9 +30,13 @@ Given a user message, decide which subsystem should handle it:
 
 - PRODUCT_RAG: questions about products, features, comparisons, recommendations/suggestions
   ("suggest me more like this", "what's a good alternative to X"), or general FAQs/policies.
-  This includes messages that praise or complain about a product using figurative/casual
-  language (e.g. calling something "fire", "insane", "trash") as long as the underlying intent
-  is about the product itself, not a real safety incident.
+  This includes messages that praise OR complain about a product using figurative/casual
+  language (e.g. calling something "fire", "insane", "trash", or sarcastic complaints about
+  quality/performance) as long as the underlying intent is about the product itself, not a
+  real safety incident.
+  Example: "Wow my new earbuds died in literally one day, great job boAt, truly explosive
+  quality." -> PRODUCT_RAG (a sarcastic complaint about battery/quality - not a real hazard,
+  and not "unclear intent" either - it's clearly about this product's performance).
 - ORDER: questions about an existing order's status, tracking, delivery, or order-specific issues.
 - ESCALATION: genuine safety concerns - fire, smoke, injury, explosion, or similar hazards actually
   happening or reported by the user. Do NOT trigger this for figurative language (e.g. "these

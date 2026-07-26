@@ -5,8 +5,10 @@ never mutates State in place, per LangGraph convention.
 """
 
 import json
+import random
 import re
 import sys
+import time
 from enum import Enum
 from pathlib import Path
 
@@ -26,6 +28,20 @@ CHAT_MODEL = "qwen3:1.7b"
 SAFETY_KEYWORD_PATTERN = re.compile(
     r"\b(fire|smoke|explod|burn|spark|injur|shock|melt)\w*\b", re.IGNORECASE
 )
+
+AUTH_SESSION_SECONDS = 30 * 60  # mock session lifetime, mirrors a real session's sliding/fixed expiry
+EMAIL_PATTERN = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
+OTP_PATTERN = re.compile(r"\b\d{4,6}\b")
+
+
+def is_authenticated(state: State) -> bool:
+    """The auth *gate* - deterministic code, never delegated to the LLM as a tool.
+    Called from graph/edges.py's conditional edge, not from inside any node."""
+    user_id = state.get("user_id")
+    expires_at = state.get("auth_expires_at")
+    if not user_id or not expires_at:
+        return False
+    return time.time() < expires_at
 
 
 class Route(str, Enum):
@@ -49,6 +65,9 @@ Given a user message, decide which subsystem should handle it:
   language (e.g. calling something "fire", "insane", "trash", or sarcastic complaints about
   quality/performance) as long as the underlying intent is about the product itself, not a
   real safety incident.
+  Example: "Wow my new earbuds died in literally one day, great job boAt, truly explosive
+  quality." -> PRODUCT_RAG (a sarcastic complaint about battery/quality - not a real hazard,
+  and not "unclear intent" either - it's clearly about this product's performance).
 - ORDER: questions about an existing order's status, tracking, delivery, or order-specific issues.
 - ESCALATION: genuine safety concerns - fire, smoke, injury, explosion, or similar hazards actually
   happening or reported by the user. Do NOT trigger this for figurative language (e.g. "these
@@ -176,9 +195,63 @@ def escalation_node(state: State) -> dict:
 
 
 def auth_node(state: State) -> dict:
-    print("auth_node: stub - would run real login/verification flow")
-    answer = "Please log in to continue - authentication isn't wired up yet in this build."
-    return _answer_update(answer)
+    """Mock email/OTP flow, three conversational stages:
+    1. no stage yet -> always prompt for email, regardless of what triggered this node
+       (an explicit "log me in" message and an unauthenticated-ORDER redirect both land
+       here identically - the triggering message is NEVER assumed to already contain
+       the email, since it might just be the request that got redirected here)
+    2. stage == "awaiting_email" -> parse the email out of this reply, generate + "send"
+       (print) a mock OTP, ask for it back
+    3. stage == "awaiting_otp" -> verify the OTP the user typed against what was issued
+
+    The LLM is never asked to decide whether auth succeeded - that's a plain string
+    comparison below. The LLM's only job anywhere near auth is parsing free text
+    (email/OTP) out of the message, which is a UX convenience, not a security decision.
+    """
+    question = _last_human_text(state)
+    stage = state.get("auth_stage")
+    print(f"auth_node: stage={stage!r} question={question!r}")
+
+    if stage == "awaiting_otp":
+        match = OTP_PATTERN.search(question)
+        entered_otp = match.group(0) if match else None
+        expected_otp = state.get("pending_otp")
+
+        if entered_otp and expected_otp and entered_otp == expected_otp:
+            user_id = state.get("pending_email")
+            expires_at = time.time() + AUTH_SESSION_SECONDS
+            print(f"auth_node: OTP verified for {user_id!r}, session valid until {expires_at}")
+            answer = f"You're verified and logged in as {user_id}. Please repeat what you needed help with."
+            return _answer_update(
+                answer,
+                user_id=user_id,
+                auth_expires_at=expires_at,
+                auth_stage=None,
+                pending_email=None,
+                pending_otp=None,
+            )
+
+        print(f"auth_node: OTP mismatch (entered={entered_otp!r}, expected={expected_otp!r})")
+        answer = "That code doesn't match. Please double-check and re-enter the one-time code."
+        return _answer_update(answer, auth_stage="awaiting_otp")
+
+    if stage == "awaiting_email":
+        match = EMAIL_PATTERN.search(question)
+        email = match.group(0) if match else question.strip()
+        otp = f"{random.randint(0, 999999):06d}"
+        print(f"auth_node: mock OTP for {email!r} is {otp!r} (mock only - no real email is sent)")
+
+        answer = f"I've sent a one-time code to {email}. Please enter it here to verify your identity."
+        return _answer_update(
+            answer,
+            pending_email=email,
+            pending_otp=otp,
+            auth_stage="awaiting_otp",
+        )
+
+    print("auth_node: no stage yet, prompting for email (not parsing the triggering message)")
+    answer = "To continue, please share the email address associated with your account."
+    return _answer_update(answer, auth_stage="awaiting_email")
 
 
 def fallback_node(state: State) -> dict:

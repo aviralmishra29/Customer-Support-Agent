@@ -9,3 +9,4 @@ images/
 data/processed/
 data/chroma/
 data/embedding_cache/
+z_temp/

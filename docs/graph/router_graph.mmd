@@ -1,0 +1,29 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	router_node(router_node)
+	rag_node(rag_node)
+	order_node(order_node)
+	escalation_node(escalation_node)
+	auth_node(auth_node)
+	fallback_node(fallback_node)
+	__end__([<p>__end__</p>]):::last
+	__start__ -.-> auth_node;
+	__start__ -.-> router_node;
+	router_node -.-> auth_node;
+	router_node -.-> escalation_node;
+	router_node -.-> fallback_node;
+	router_node -.-> order_node;
+	router_node -.-> rag_node;
+	auth_node --> __end__;
+	escalation_node --> __end__;
+	fallback_node --> __end__;
+	order_node --> __end__;
+	rag_node --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

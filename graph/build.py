@@ -3,7 +3,7 @@
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import END, START, StateGraph
 
-from graph.edges import route_after_router
+from graph.edges import route_after_router, route_from_start
 from graph.nodes import (
     auth_node,
     escalation_node,
@@ -25,7 +25,14 @@ def build_graph():
     builder.add_node("auth_node", auth_node)
     builder.add_node("fallback_node", fallback_node)
 
-    builder.add_edge(START, "router_node")
+    builder.add_conditional_edges(
+        START,
+        route_from_start,
+        {
+            "router_node": "router_node",
+            "auth_node": "auth_node",
+        },
+    )
     builder.add_conditional_edges(
         "router_node",
         route_after_router,
