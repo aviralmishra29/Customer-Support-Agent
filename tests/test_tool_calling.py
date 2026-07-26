@@ -5,8 +5,8 @@ from pathlib import Path
 
 from langchain_ollama import ChatOllama
 
-sys.path.insert(0, str(Path(__file__).parent))
-from order_tools import get_order_status
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from tools.order_tools import get_order_status
 
 CHAT_MODEL = "qwen3:1.7b"
 

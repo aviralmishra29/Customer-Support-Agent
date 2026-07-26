@@ -13,7 +13,7 @@ Checked against documented LangGraph conventions (web search, not assumed) befor
 
 ## Bug 1: message history only ever contained human messages
 
-First real end-to-end run (`tools/test_graph_e2e.py`, 2 turns on one `thread_id`) showed `messages in thread: 2` after 2 full turns — should have been 4. Root cause: every node returned `{"answer": ...}` but never touched `state["messages"]` at all, so the checkpointer had nothing from the AI side to persist. This silently defeats a chunk of the point of using a checkpointer — the next turn's router/RAG calls would have no idea what was said before.
+First real end-to-end run (`tests/test_graph_e2e.py`, 2 turns on one `thread_id`) showed `messages in thread: 2` after 2 full turns — should have been 4. Root cause: every node returned `{"answer": ...}` but never touched `state["messages"]` at all, so the checkpointer had nothing from the AI side to persist. This silently defeats a chunk of the point of using a checkpointer — the next turn's router/RAG calls would have no idea what was said before.
 
 **Fix:** a shared helper every node routes its return value through:
 

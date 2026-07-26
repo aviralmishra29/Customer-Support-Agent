@@ -22,7 +22,7 @@ class RouterDecision(BaseModel):
 
 `Route(str, Enum)` makes non-conformant values structurally impossible rather than just discouraged. `RouterDecision` wraps it in a `BaseModel` because `.with_structured_output()` expects a schema, and it leaves room to add fields later (e.g. `confidence`) without changing the mechanism.
 
-**Verified, not assumed:** `qwen3:1.7b` + `.with_structured_output(RouterDecision)` was tested against 9 deliberately adversarial prompts (`tools/test_router_structured_output.py`) — every single call returned a valid, schema-conformant `RouterDecision`, no exceptions, no out-of-enum values. The mechanism holds up on this model. What it does *not* guarantee is that the classification itself is *correct* — see below, that's a separate, prompt-quality problem.
+**Verified, not assumed:** `qwen3:1.7b` + `.with_structured_output(RouterDecision)` was tested against 9 deliberately adversarial prompts (`tests/test_router_structured_output.py`) — every single call returned a valid, schema-conformant `RouterDecision`, no exceptions, no out-of-enum values. The mechanism holds up on this model. What it does *not* guarantee is that the classification itself is *correct* — see below, that's a separate, prompt-quality problem.
 
 ## Why regex-only escalation gating is wrong (caught via an adversarial example)
 
