@@ -1,7 +1,12 @@
 """End-to-end test of graph-enforced auth: an unauthenticated ORDER request must be
 gated to auth_node by the conditional edge (not by order_node itself), then the mock
 OTP flow should authenticate the thread, after which the same ORDER request should
-go through to order_node."""
+go through to order_node.
+
+Logs in as demo@boat-demo.com (a real seed-data order owner, not a throwaway address)
+so the final turns can distinguish "my own order" from "someone else's order" - the
+per-user ownership check added to order_node must allow the former and deny the
+latter with the exact same wording as a real not-found, not a distinct message."""
 
 import sys
 from pathlib import Path
@@ -28,7 +33,7 @@ if __name__ == "__main__":
 
     print("\n=== Turn 2: provide email ===")
     result = graph.invoke(
-        {"messages": [("human", "my email is test.user@example.com")]},
+        {"messages": [("human", "my email is demo@boat-demo.com")]},
         config=config,
     )
     print(f"answer: {result['answer']}")
@@ -38,7 +43,7 @@ if __name__ == "__main__":
     pending_email = state.values.get("pending_email")
     print(f"(test harness reading state directly, mock only) pending_email={pending_email!r} pending_otp={pending_otp!r}")
     assert pending_otp is not None, "auth_node should have generated a mock OTP"
-    assert pending_email == "test.user@example.com", f"expected the actual email to be captured, got {pending_email!r}"
+    assert pending_email == "demo@boat-demo.com", f"expected the actual email to be captured, got {pending_email!r}"
 
     print("\n=== Turn 3: provide the (correct) OTP ===")
     result = graph.invoke(
@@ -50,16 +55,28 @@ if __name__ == "__main__":
     state = graph.get_state(config)
     print(f"user_id after verification: {state.values.get('user_id')!r}")
     print(f"auth_expires_at after verification: {state.values.get('auth_expires_at')!r}")
-    assert state.values.get("user_id") == "test.user@example.com", f"expected user_id to be the real email, got {state.values.get('user_id')!r}"
+    assert state.values.get("user_id") == "demo@boat-demo.com", f"expected user_id to be the real email, got {state.values.get('user_id')!r}"
 
-    print("\n=== Turn 4: repeat the order question, now authenticated ===")
+    print("\n=== Turn 4: ask about my own order (BOAT-2026-001001, owned by demo@boat-demo.com) ===")
     result = graph.invoke(
         {"messages": [("human", "What's the status of my order BOAT-2026-001001?")]},
         config=config,
     )
     print(f"route: {result['route']}")
     print(f"answer: {result['answer']}")
-    assert "delivered" in result["answer"].lower() or "order" in result["answer"].lower(), \
-        "should now reach order_node and get a real order answer"
+    assert "delivered" in result["answer"].lower(), \
+        "should reach order_node and get the real (delivered) status for an order I own"
+
+    print("\n=== Turn 5: ask about someone else's order (BOAT-2026-002001, owned by priya@example.com) ===")
+    result = graph.invoke(
+        {"messages": [("human", "What's the status of order BOAT-2026-002001?")]},
+        config=config,
+    )
+    print(f"route: {result['route']}")
+    print(f"answer: {result['answer']}")
+    assert "no order found" in result["answer"].lower(), \
+        "ownership mismatch must read exactly like a real not-found, not reveal the order exists"
+    assert "priya" not in result["answer"].lower() and "shipped" not in result["answer"].lower(), \
+        "must not leak any detail about an order belonging to a different authenticated user"
 
     print("\n=== All assertions passed ===")

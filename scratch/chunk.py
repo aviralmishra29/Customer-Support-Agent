@@ -97,10 +97,28 @@ def build_all_chunks() -> list[dict]:
 
     products = json.loads((DATA_DIR / "seed" / "products.json").read_text())
     for p in products:
+        # Flatten specs into scalar metadata fields (Chroma metadata values must be
+        # str/int/float/bool, no nested dicts/lists) so product attributes become
+        # filterable via `where` - exact/range/boolean structured filtering, not just
+        # similarity-ranked prose. Specs vary by category (tws has battery_hours/anc,
+        # watch has display_inch/battery_days, etc.) - only keys actually present on
+        # a given product get added, so products naturally end up with different
+        # metadata keys, which Chroma supports fine (no fixed schema across documents).
+        metadata = {
+            "type": "product",
+            "sku": p["sku"],
+            "name": p["name"],
+            "category": p["category"],
+            "price": p["price"],
+        }
+        for key, value in p["specs"].items():
+            if isinstance(value, (str, int, float, bool)):
+                metadata[key] = value
+
         chunks.append({
             "id": f"product-{p['sku']}",
             "text": product_to_text(p),
-            "metadata": {"type": "product", "sku": p["sku"], "name": p["name"], "category": p["category"]},
+            "metadata": metadata,
         })
 
     faqs = json.loads((DATA_DIR / "seed" / "faqs.json").read_text())

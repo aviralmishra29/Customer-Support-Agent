@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>boAt Support Agent</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f1115;
+    color: #e7e9ee;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .app {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #23262f;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  header .sub {
+    font-weight: 400;
+    font-size: 12px;
+    color: #8b8f99;
+    margin-top: 2px;
+  }
+  #messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .msg {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    line-height: 1.4;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  .msg.user {
+    align-self: flex-end;
+    background: #2563eb;
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+  .msg.assistant {
+    align-self: flex-start;
+    background: #1c1f29;
+    border: 1px solid #2a2e3a;
+    border-bottom-left-radius: 4px;
+  }
+  .msg.error {
+    align-self: flex-start;
+    background: #3a1c1c;
+    border: 1px solid #5a2a2a;
+    color: #ffb4b4;
+  }
+  .msg .route-tag {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #8b8f99;
+    margin-bottom: 4px;
+  }
+  .msg.assistant .route-tag { color: #6b90ff; }
+  #composer {
+    display: flex;
+    gap: 8px;
+    padding: 16px 20px;
+    border-top: 1px solid #23262f;
+  }
+  #input {
+    flex: 1;
+    background: #1c1f29;
+    border: 1px solid #2a2e3a;
+    border-radius: 10px;
+    color: #e7e9ee;
+    padding: 12px 14px;
+    font-size: 14px;
+    resize: none;
+    font-family: inherit;
+  }
+  #input:focus { outline: none; border-color: #2563eb; }
+  #send {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #send:disabled { background: #2a2e3a; color: #8b8f99; cursor: not-allowed; }
+  .thinking {
+    align-self: flex-start;
+    font-size: 13px;
+    color: #8b8f99;
+    font-style: italic;
+    padding: 4px 14px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    boAt Support Agent
+    <div class="sub">Local agent &middot; answers may take up to a few minutes</div>
+  </header>
+  <div id="messages"></div>
+  <div id="composer">
+    <textarea id="input" rows="1" placeholder="Ask about products, orders, or policies..."></textarea>
+    <button id="send">Send</button>
+  </div>
+</div>
+
+<script>
+const API_BASE = window.location.origin;
+
+function getThreadId() {
+  let id = localStorage.getItem("boat_thread_id");
+  if (!id) {
+    id = crypto.randomUUID();
+    localStorage.setItem("boat_thread_id", id);
+  }
+  return id;
+}
+const threadId = getThreadId();
+
+const messagesEl = document.getElementById("messages");
+const inputEl = document.getElementById("input");
+const sendBtn = document.getElementById("send");
+
+function addMessage(text, kind, route) {
+  const div = document.createElement("div");
+  div.className = "msg " + kind;
+  if (route) {
+    const tag = document.createElement("span");
+    tag.className = "route-tag";
+    tag.textContent = route;
+    div.appendChild(tag);
+  }
+  const textNode = document.createElement("span");
+  textNode.textContent = text;
+  div.appendChild(textNode);
+  messagesEl.appendChild(div);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return div;
+}
+
+function addThinking() {
+  const div = document.createElement("div");
+  div.className = "thinking";
+  div.textContent = "Thinking... (this can take up to a few minutes on local hardware)";
+  messagesEl.appendChild(div);
+  messagesEl.scrollTop = messagesEl.scrollHeight;
+  return div;
+}
+
+async function sendMessage() {
+  const text = inputEl.value.trim();
+  if (!text) return;
+
+  addMessage(text, "user");
+  inputEl.value = "";
+  sendBtn.disabled = true;
+  inputEl.disabled = true;
+  const thinkingEl = addThinking();
+
+  try {
+    const resp = await fetch(API_BASE + "/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ thread_id: threadId, message: text }),
+    });
+
+    thinkingEl.remove();
+
+    if (resp.status === 429) {
+      const body = await resp.json();
+      addMessage(body.detail || "The agent is busy right now. Please try again shortly.", "error");
+    } else if (!resp.ok) {
+      const body = await resp.json().catch(() => ({}));
+      addMessage(body.detail || `Request failed (status ${resp.status}).`, "error");
+    } else {
+      const body = await resp.json();
+      addMessage(body.answer, "assistant", body.route);
+    }
+  } catch (err) {
+    thinkingEl.remove();
+    addMessage("Could not reach the agent - is the server running? (" + err.message + ")", "error");
+  } finally {
+    sendBtn.disabled = false;
+    inputEl.disabled = false;
+    inputEl.focus();
+  }
+}
+
+sendBtn.addEventListener("click", sendMessage);
+inputEl.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+inputEl.focus();
+</script>
+</body>
+</html>

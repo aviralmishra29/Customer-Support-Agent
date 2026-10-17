@@ -9,4 +9,8 @@ images/
 data/processed/
 data/chroma/
 data/embedding_cache/
+data/orders/
 z_temp/
+
+# runtime state, NOT regeneratable from seed data - real conversation/checkpoint content
+data/checkpoints/
