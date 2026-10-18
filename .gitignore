@@ -13,4 +13,4 @@ data/orders/
 z_temp/
 
 # runtime state, NOT regeneratable from seed data - real conversation/checkpoint content
-data/checkpoints/
+data/checkpoints/resume/
